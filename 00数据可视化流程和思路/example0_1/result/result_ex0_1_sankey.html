@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/ResizeSensor.js"></script>
+
+            <link rel="stylesheet"  href="https://assets.pyecharts.org/assets/jquery-ui.css">
+
+</head>
+<body>
+    <style>.box {  }; </style>
+        <button onclick="downloadCfg()">Save Config</button>
+    <div class="box">
+                <div id="67d54563721d478a8c85e3c0682ab123" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_67d54563721d478a8c85e3c0682ab123 = echarts.init(
+            document.getElementById('67d54563721d478a8c85e3c0682ab123'), 'dark', {renderer: 'canvas'});
+        var option_67d54563721d478a8c85e3c0682ab123 = {
+    "backgroundColor": "#253441",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "sankey",
+            "name": "sankey",
+            "data": [
+                {
+                    "name": "1-\u6211\u7684"
+                },
+                {
+                    "name": "3-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "1-\u6d88\u606f"
+                },
+                {
+                    "name": "1-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "\u9996\u9875"
+                },
+                {
+                    "name": "2-\u9996\u9875"
+                },
+                {
+                    "name": "2-\u6d88\u606f"
+                },
+                {
+                    "name": "1-\u641c\u7d22\u680f"
+                },
+                {
+                    "name": "2-\u6211\u7684"
+                },
+                {
+                    "name": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762"
+                },
+                {
+                    "name": "\u79bb\u5f00"
+                },
+                {
+                    "name": "2-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "2-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762"
+                }
+            ],
+            "links": [
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 1323
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u641c\u7d22\u680f",
+                    "value": 448
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u6d88\u606f",
+                    "value": 147
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u6211\u7684",
+                    "value": 98
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 84
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "value": 658
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "2-\u9996\u9875",
+                    "value": 518
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 147
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 266
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "2-\u9996\u9875",
+                    "value": 119
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "\u79bb\u5f00",
+                    "value": 63
+                },
+                {
+                    "source": "1-\u6d88\u606f",
+                    "target": "2-\u9996\u9875",
+                    "value": 70
+                },
+                {
+                    "source": "1-\u6d88\u606f",
+                    "target": "\u79bb\u5f00",
+                    "value": 28
+                },
+                {
+                    "source": "1-\u6211\u7684",
+                    "target": "2-\u9996\u9875",
+                    "value": 70
+                },
+                {
+                    "source": "1-\u6211\u7684",
+                    "target": "\u79bb\u5f00",
+                    "value": 14
+                },
+                {
+                    "source": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "target": "2-\u9996\u9875",
+                    "value": 581
+                },
+                {
+                    "source": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "target": "\u79bb\u5f00",
+                    "value": 77
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "3-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 134
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "2-\u6211\u7684",
+                    "value": 122
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "2-\u6d88\u606f",
+                    "value": 124
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 978
+                },
+                {
+                    "source": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "2-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "value": 126
+                },
+                {
+                    "source": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 140
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
+            "nodeWidth": 20,
+            "nodeGap": 8,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
+            "levels": [
+                {
+                    "depth": 0,
+                    "itemStyle": {
+                        "color": "#FF8947",
+                        "borderColor": "#FF8947"
+                    }
+                },
+                {
+                    "depth": 1,
+                    "itemStyle": {
+                        "color": "#96D15C",
+                        "borderColor": "#96D15C"
+                    }
+                },
+                {
+                    "depth": 2,
+                    "itemStyle": {
+                        "color": "#479BED",
+                        "borderColor": "#479BED"
+                    }
+                },
+                {
+                    "depth": 3,
+                    "itemStyle": {
+                        "color": "#55C4CA",
+                        "borderColor": "#55C4CA"
+                    }
+                },
+                {
+                    "depth": 4,
+                    "itemStyle": {
+                        "color": "#E7BF4F",
+                        "borderColor": "#E7BF4F"
+                    }
+                }
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "color": "white",
+                "margin": 8,
+                "fontSize": 10
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.3,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "source"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "sankey"
+            ],
+            "selected": {
+                "sankey": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u7528\u6237\u8def\u5f84\u6d41\u8f6c\u56fe\u5bf9\u7167\u7ec4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_67d54563721d478a8c85e3c0682ab123.setOption(option_67d54563721d478a8c85e3c0682ab123);
+    </script>
+<br/>                <div id="471657fff5834d8cada3bf636a3f9ad8" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_471657fff5834d8cada3bf636a3f9ad8 = echarts.init(
+            document.getElementById('471657fff5834d8cada3bf636a3f9ad8'), 'dark', {renderer: 'canvas'});
+        var option_471657fff5834d8cada3bf636a3f9ad8 = {
+    "backgroundColor": "#253441",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "sankey",
+            "name": "sankey",
+            "data": [
+                {
+                    "name": "1-\u6211\u7684"
+                },
+                {
+                    "name": "3-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "1-\u6d88\u606f"
+                },
+                {
+                    "name": "1-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "\u9996\u9875"
+                },
+                {
+                    "name": "2-\u9996\u9875"
+                },
+                {
+                    "name": "2-\u6d88\u606f"
+                },
+                {
+                    "name": "1-\u641c\u7d22\u680f"
+                },
+                {
+                    "name": "2-\u6211\u7684"
+                },
+                {
+                    "name": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762"
+                },
+                {
+                    "name": "\u79bb\u5f00"
+                },
+                {
+                    "name": "2-\u5185\u5bb9\u9605\u8bfb\u9875"
+                },
+                {
+                    "name": "2-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762"
+                }
+            ],
+            "links": [
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 1421
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u641c\u7d22\u680f",
+                    "value": 412
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u6d88\u606f",
+                    "value": 134
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "1-\u6211\u7684",
+                    "value": 86
+                },
+                {
+                    "source": "\u9996\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 47
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "value": 689
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "2-\u9996\u9875",
+                    "value": 672
+                },
+                {
+                    "source": "1-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 60
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 234
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "2-\u9996\u9875",
+                    "value": 135
+                },
+                {
+                    "source": "1-\u641c\u7d22\u680f",
+                    "target": "\u79bb\u5f00",
+                    "value": 43
+                },
+                {
+                    "source": "1-\u6d88\u606f",
+                    "target": "2-\u9996\u9875",
+                    "value": 85
+                },
+                {
+                    "source": "1-\u6d88\u606f",
+                    "target": "\u79bb\u5f00",
+                    "value": 49
+                },
+                {
+                    "source": "1-\u6211\u7684",
+                    "target": "2-\u9996\u9875",
+                    "value": 84
+                },
+                {
+                    "source": "1-\u6211\u7684",
+                    "target": "\u79bb\u5f00",
+                    "value": 2
+                },
+                {
+                    "source": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "target": "2-\u9996\u9875",
+                    "value": 598
+                },
+                {
+                    "source": "1-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "target": "\u79bb\u5f00",
+                    "value": 91
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "3-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "value": 967
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "2-\u6211\u7684",
+                    "value": 145
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "2-\u6d88\u606f",
+                    "value": 178
+                },
+                {
+                    "source": "2-\u9996\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 275
+                },
+                {
+                    "source": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "2-\u5176\u4ed6\u975e\u9605\u8bfb\u9875\u9762",
+                    "value": 175
+                },
+                {
+                    "source": "2-\u5185\u5bb9\u9605\u8bfb\u9875",
+                    "target": "\u79bb\u5f00",
+                    "value": 59
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
+            "nodeWidth": 20,
+            "nodeGap": 8,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
+            "levels": [
+                {
+                    "depth": 0,
+                    "itemStyle": {
+                        "color": "#FF8947",
+                        "borderColor": "#FF8947"
+                    }
+                },
+                {
+                    "depth": 1,
+                    "itemStyle": {
+                        "color": "#96D15C",
+                        "borderColor": "#96D15C"
+                    }
+                },
+                {
+                    "depth": 2,
+                    "itemStyle": {
+                        "color": "#479BED",
+                        "borderColor": "#479BED"
+                    }
+                },
+                {
+                    "depth": 3,
+                    "itemStyle": {
+                        "color": "#55C4CA",
+                        "borderColor": "#55C4CA"
+                    }
+                },
+                {
+                    "depth": 4,
+                    "itemStyle": {
+                        "color": "#E7BF4F",
+                        "borderColor": "#E7BF4F"
+                    }
+                }
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "color": "white",
+                "margin": 8,
+                "fontSize": 10
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.3,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "source"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "sankey"
+            ],
+            "selected": {
+                "sankey": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u7528\u6237\u8def\u5f84\u6d41\u8f6c\u56fe\u5b9e\u9a8c\u7ec4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_471657fff5834d8cada3bf636a3f9ad8.setOption(option_471657fff5834d8cada3bf636a3f9ad8);
+    </script>
+<br/>    </div>
+    <script>
+            $('#67d54563721d478a8c85e3c0682ab123').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#67d54563721d478a8c85e3c0682ab123>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#67d54563721d478a8c85e3c0682ab123'), function() { chart_67d54563721d478a8c85e3c0682ab123.resize()});
+            $('#471657fff5834d8cada3bf636a3f9ad8').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#471657fff5834d8cada3bf636a3f9ad8>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#471657fff5834d8cada3bf636a3f9ad8'), function() { chart_471657fff5834d8cada3bf636a3f9ad8.resize()});
+            var charts_id = ['67d54563721d478a8c85e3c0682ab123','471657fff5834d8cada3bf636a3f9ad8'];
+function downloadCfg () {
+    const fileName = 'chart_config.json'
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+
+    let result = []
+    for(let i=0; i<charts_id.length; i++) {
+        chart = $('#'+charts_id[i])
+        result.push({
+            cid: charts_id[i],
+            width: chart.css("width"),
+            height: chart.css("height"),
+            top: chart.offset().top + "px",
+            left: chart.offset().left + "px"
+        })
+    }
+
+    let blob = new Blob([JSON.stringify(result)])
+    downLink.href = URL.createObjectURL(blob)
+    document.body.appendChild(downLink)
+    downLink.click()
+    document.body.removeChild(downLink)
+}
+    </script>
+</body>
+</html>
