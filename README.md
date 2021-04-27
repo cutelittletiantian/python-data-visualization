@@ -24,10 +24,24 @@
 
 > 用途：将数据进行可视化，生成各种可交互式的图表。
 >
-> 导入方式：
+> 导入方式：直接采用``import pyecharts``导入有其不足点，通常我们这样导入pyecharts包
 
 ```python
-import pyecharts
+# 导入options模块并简写为opts
+import pyecharts.options as opts
+# 从pyecharts.charts中导入“某一特定类型图”（some-package）模块
+from pyecharts.charts import <some-package>
+```
+
+其中上述``<some-package>``，根据需要绘制的图形类型进行特别指定，画柱状图就换成``Bar``，画线状图就指定``Line``，画桑基图就指定``Sankey``等。
+
+举例：假如要绘制柱状图（Bar chart），就这样导入``pyecharts``库
+
+```python
+# 导入options模块并简写为opts
+import pyecharts.options as opts
+# 从pyecharts.charts中导入 Bar 模块
+from pyecharts.charts import Bar
 ```
 
 ***
@@ -59,7 +73,7 @@ workSheet = photoParamBook["示例"]  # type: Worksheet
 
 ***
 
-``安装第三方包出错的解决方法``：有时安装失败是因为国内网络有一些限制，这时您可以尝试使用清华大学镜像下载相应的包，即``pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package``，其中``some-package``换成自己所需要安装的第三方库名。
+**安装第三方包出错的解决方法**：有时安装失败是因为国内网络有一些限制，这时您可以尝试使用清华大学镜像下载相应的包，即``pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package``，其中``some-package``换成自己所需要安装的第三方库名。
 
 ***
 
