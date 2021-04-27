@@ -79,6 +79,11 @@ bar = Bar()
 bar.add_xaxis(xaxis_data=name)
 # 给柱状图添加y轴数据，数据内容是赞粉比列表：ratioList，指定该数据的图例为”赞粉比“
 bar.add_yaxis(y_axis=ratioList, series_name="赞粉比")
+# 优化：横坐标文字比较长时候，部分文字被遮挡不进行显示，所以让横坐标文字稍微倾斜45度一点，同时添加一个标题
+bar.set_global_opts(
+    xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=45)),
+    title_opts=opts.TitleOpts(title="部分博主粉丝与点赞的对比")
+)
 # 绘制出这条柱状图，并保存到路径"./result/fans_likes.html"
 resultFileName = "fans_likes.html"
 bar.render(path=os.path.join(resultPath, resultFileName))

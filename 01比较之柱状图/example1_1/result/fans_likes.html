@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="2ab952a2aecb4b22b89fc6437a813ee2" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="d85f87e8865c4d5ebc3325ca8b7cf7a0" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_2ab952a2aecb4b22b89fc6437a813ee2 = echarts.init(
-            document.getElementById('2ab952a2aecb4b22b89fc6437a813ee2'), 'white', {renderer: 'canvas'});
-        var option_2ab952a2aecb4b22b89fc6437a813ee2 = {
+        var chart_d85f87e8865c4d5ebc3325ca8b7cf7a0 = echarts.init(
+            document.getElementById('d85f87e8865c4d5ebc3325ca8b7cf7a0'), 'white', {renderer: 'canvas'});
+        var option_d85f87e8865c4d5ebc3325ca8b7cf7a0 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -88,7 +88,12 @@
             ],
             "selected": {
                 "\u8d5e\u7c89\u6bd4": true
-            }
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -115,6 +120,12 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 45,
+                "margin": 8
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -166,9 +177,15 @@
             }
         }
     ],
-    "rotate": 45
+    "title": [
+        {
+            "text": "\u90e8\u5206\u535a\u4e3b\u7c89\u4e1d\u4e0e\u70b9\u8d5e\u7684\u5bf9\u6bd4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
 };
-        chart_2ab952a2aecb4b22b89fc6437a813ee2.setOption(option_2ab952a2aecb4b22b89fc6437a813ee2);
+        chart_d85f87e8865c4d5ebc3325ca8b7cf7a0.setOption(option_d85f87e8865c4d5ebc3325ca8b7cf7a0);
     </script>
 </body>
 </html>

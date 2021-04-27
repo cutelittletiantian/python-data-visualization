@@ -45,3 +45,25 @@ note:
 x轴和y轴的数据长度应该一致，从而一一对应生成图像
 
 添加y轴的同时，一定要指定该数据的图例（series_name），否则运行会不予通过
+
+## 附：解决图像显示时x轴部分label（标签）丢失的问题
+
+您可以尝试将``example1_1.py``中的下述代码注释掉再运行。
+
+```python
+# 优化：横坐标文字比较长时候，部分文字被遮挡不进行显示，所以让横坐标文字稍微倾斜45度一点，同时添加一个标题
+bar.set_global_opts(
+    xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=45)),
+    title_opts=opts.TitleOpts(title="部分博主粉丝与点赞的对比")
+)
+```
+
+然后你会发现：
+
+* 嗯？x轴为啥有些标签没有显示出来？不见了！！！
+
+* 嗯？标题去哪里了？！！
+
+在程序中，一开始这句导入``from pyecharts import options as opts``，这里导入的其实就是对图表配置的选项，上述代码通过设置options中的一些内容，实现了向柱状图添加标题，倾斜横坐标label的功能。
+
+options模块是一个非常实用的模块，后面经常需要它辅助配置图标的一些细节呈现。
