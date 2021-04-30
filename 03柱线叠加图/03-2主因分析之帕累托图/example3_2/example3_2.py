@@ -111,3 +111,7 @@ if not os.path.exists(path=resultPath):
 resultFileName = "math_analysis_pareto.html"
 
 pareto.render(path=os.path.join(resultPath, resultFileName))
+# 等价，但是同一张图不能重复render
+# bar.render(path=os.path.join(resultPath, resultFileName))
+# 叠加后，折线图和柱状图的变化是相同的
+# line.render(path=os.path.join(resultPath, "temp_line.html"))
