@@ -48,8 +48,8 @@ if not os.path.exists(resultPath):
     os.mkdir(path=resultPath)
 # 保存文件名
 resultFileName = "restaurant_pareto.html"
-
-bar = (
+# 执行绘图并保存
+pareto = (
     Bar()
     .set_global_opts(xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=45)),
                      title_opts=opts.TitleOpts(title="各菜品盈利额"))

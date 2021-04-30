@@ -102,11 +102,12 @@ line = (
 
 往柱状图上叠加（overlap）折线图
 """
-bar.overlap(line)
+pareto = bar.overlap(line)
 
 # 保存帕累托图
 resultPath = "./result"
 if not os.path.exists(path=resultPath):
     os.mkdir(path=resultPath)
 resultFileName = "math_analysis_pareto.html"
-bar.render(path=os.path.join(resultPath, resultFileName))
+
+pareto.render(path=os.path.join(resultPath, resultFileName))
