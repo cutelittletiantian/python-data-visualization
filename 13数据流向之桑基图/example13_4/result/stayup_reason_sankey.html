@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="736c40369fc4471eaf88abf40f4832cd" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_736c40369fc4471eaf88abf40f4832cd = echarts.init(
+            document.getElementById('736c40369fc4471eaf88abf40f4832cd'), 'light', {renderer: 'canvas'});
+        var option_736c40369fc4471eaf88abf40f4832cd = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "sankey",
+            "data": [
+                {
+                    "name": "\u7537"
+                },
+                {
+                    "name": "\u5973"
+                },
+                {
+                    "name": "\u6253\u6e38\u620f"
+                },
+                {
+                    "name": "\u52a0\u73ed"
+                },
+                {
+                    "name": "\u770b\u5267"
+                }
+            ],
+            "links": [
+                {
+                    "source": "\u7537",
+                    "target": "\u6253\u6e38\u620f",
+                    "value": 79
+                },
+                {
+                    "source": "\u7537",
+                    "target": "\u52a0\u73ed",
+                    "value": 13
+                },
+                {
+                    "source": "\u7537",
+                    "target": "\u770b\u5267",
+                    "value": 24
+                },
+                {
+                    "source": "\u5973",
+                    "target": "\u6253\u6e38\u620f",
+                    "value": 16
+                },
+                {
+                    "source": "\u5973",
+                    "target": "\u52a0\u73ed",
+                    "value": 5
+                },
+                {
+                    "source": "\u5973",
+                    "target": "\u770b\u5267",
+                    "value": 63
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
+            "nodeWidth": 20,
+            "nodeGap": 8,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
+            "label": {
+                "show": true,
+                "position": "right",
+                "color": "rgb(0, 0, 0)",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.2,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "target"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u5f53\u4ee3\u9752\u5e74\u71ac\u591c\u539f\u56e0",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_736c40369fc4471eaf88abf40f4832cd.setOption(option_736c40369fc4471eaf88abf40f4832cd);
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="06dc081978554355b49f5b2e601500e0" class="chart-container" style="width:900px; height:600px;"></div>
+    <script>
+        var chart_06dc081978554355b49f5b2e601500e0 = echarts.init(
+            document.getElementById('06dc081978554355b49f5b2e601500e0'), 'white', {renderer: 'canvas'});
+        var option_06dc081978554355b49f5b2e601500e0 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "boxplot",
+            "name": "\u5b9e\u9a8c\u7ec4\u6570\u636e",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                [
+                    312,
+                    366.75,
+                    380.0,
+                    388.25,
+                    432
+                ],
+                [
+                    354,
+                    388.5,
+                    409.5,
+                    416.5,
+                    432
+                ],
+                [
+                    352,
+                    377.75,
+                    391.5,
+                    405.75,
+                    447
+                ],
+                [
+                    213,
+                    255.5,
+                    266.5,
+                    278.0,
+                    288
+                ],
+                [
+                    188,
+                    214.5,
+                    228.0,
+                    234.0,
+                    278
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "markPoint": {
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                }
+            },
+            "markLine": {
+                "silent": false,
+                "precision": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                }
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5b9e\u9a8c\u7ec4\u6570\u636e"
+            ],
+            "selected": {
+                "\u5b9e\u9a8c\u7ec4\u6570\u636e": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "\u6e29\u5ea6",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "15\u2103",
+                "20\u2103",
+                "25\u2103",
+                "30\u2103",
+                "35\u2103"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u6709\u6548\u542b\u91cf\u503c(\u5355\u4f4d: g/500g)",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u63a2\u7a76\u6e29\u5ea6\u5bf9\u5316\u80a5\u6709\u6548\u6210\u5206\u542b\u91cf\u7684\u5f71\u54cd",
+            "subtext": "\u6bcf\u79cd\u6e29\u5ea6\u4e0b\u5171\u91c7\u96c610\u7ec4\u6570\u636e",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "top": "20%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ]
+};
+        chart_06dc081978554355b49f5b2e601500e0.setOption(option_06dc081978554355b49f5b2e601500e0);
+    </script>
+</body>
+</html>
