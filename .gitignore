@@ -134,5 +134,3 @@ dmypy.json
 /.idea/.gitignore
 /.idea/inspectionProfiles/profiles_settings.xml
 /venv_hbsh/
-
-*/*/result
