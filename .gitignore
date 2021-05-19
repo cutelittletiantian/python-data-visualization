@@ -134,3 +134,6 @@ dmypy.json
 /.idea/.gitignore
 /.idea/inspectionProfiles/profiles_settings.xml
 /venv_hbsh/
+/.idea/jsLibraryMappings.xml
+/.idea/workspace-Michael-Du.xml
+/.idea/workspace-Michael-Du-2.xml
