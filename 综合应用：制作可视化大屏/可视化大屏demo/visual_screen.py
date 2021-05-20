@@ -1,7 +1,7 @@
 import os
-from pyecharts.charts import Pie, Bar, HeatMap, Bar, Map, Radar, Graph, Page
-from pyecharts.globals import ThemeType
 import pyecharts.options as opts
+from pyecharts.charts import Pie, HeatMap, Bar, Map, Radar, Graph, Page
+from pyecharts.globals import ThemeType
 
 # 综合利用可视化大屏，展示广州餐饮业有关数据
 
