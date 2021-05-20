@@ -121,6 +121,6 @@ workSheet = photoParamBook["示例"]  # type: Worksheet
 
 # 小添添的其它Python坑
 
-**Python自动化办公**：使用``os`` ``openpyxl`` ``python-docx`` ``pdfplumber``等第三方库批量分类文件、批量读写Excel文档、批量读写Word文档、批量获取文字类Pdf文档内容等，通过一些典型的应用场景，大幅提升职场办公室工作效率。
+**Python自动化办公**：使用``os`` ``openpyxl`` ``python-docx`` ``pdfplumber``等第三方库批量分类文件、批量读写Excel文档、批量读写Word文档、批量获取文字类Pdf文档、基于SMTP和MIME协议的邮件批量发送内容等，通过一些典型的应用场景，大幅提升职场办公室工作效率。
 
 > 传送门：https://github.com/cutelittletiantian/python-for-office
